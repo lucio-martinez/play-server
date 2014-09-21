@@ -1,7 +1,7 @@
-Play
-====
+Play Server
+===========
 
-Web server to control your Rhythmbox instance remotelly using your phone, tablet or another computer.
+Web server to play your music remotelly using your phone, tablet or another computer.
 
 #Setup
 
