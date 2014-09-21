@@ -6,9 +6,24 @@
 VIRTUALENV=~/cool-player/play-server
 PROJECT=play/*
 
+echo "WARNING! Make sure that you do not have a folder already on $VIRTUALENV"
+echo "Otherwise any information stored there will be deleted."
+echo ""
+echo "Do you want to continue? Y/n"
+read -r doit
+
+if [[ "$doit" != "Y" && "$doit" != "y" ]];
+then
+	exit;
+fi
+
 # Install virtualenv
 echo " [*] Installing python virtual environment.."
 sudo apt-get install python-virtualenv
+
+# Remove possible old environment
+echo " [*] Trying to remove possible obsolete environment.."
+rm $VIRTUALENV
 
 # Generate the virtual environment
 echo " [*] Generating the virtual environment.."
