@@ -14,4 +14,4 @@ Web server to play your music remotelly using your phone, tablet or another comp
 
 Copyright 2014 Lucio Martínez. 
 
-Code released under [the MIT license](https://github.com/lucio-martinez/play/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/lucio-martinez/play-server/blob/master/LICENSE).
