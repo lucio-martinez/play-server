@@ -10,6 +10,10 @@ Web server to play your music remotelly using your phone, tablet or another comp
  3. Enable the environment with `source bin/activate`
  4. Run the server with `run.py`
 
+#Player
+
+The player that this server can control is Rhythmbox. This player comes by default in most recent Ubuntu's versions.
+
 #Copyright
 
 Copyright 2014 Lucio Martínez. 
