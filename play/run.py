@@ -4,6 +4,7 @@ Run a bottle server to control a player remotelly
 
 
 from bottle import Bottle, route, run, response, request, view
+import cherrypy
 from core.player import Player
 from core.system import System
 
@@ -100,7 +101,7 @@ def main():
     def system_down():
         system.volume_down()
 
-    run(app, host='0.0.0.0', port=3000, debug=True, reloader=True)
+    run(app, server='cherrypy', host='0.0.0.0', port=3000, debug=True, reloader=True)
 
 if __name__ == '__main__':
     main()
